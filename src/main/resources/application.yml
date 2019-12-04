@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+person:
+ name: liming
+ age: 12
+ sex: 1
+ email: shenghail@qq.com
+ list:
+  - lisi
+  - zhangsan
+ map: {key1: val1, key2: val2}
+ dog:
+  name: 小黑
+  age: 2

@@ -1,2 +1,2 @@
-# spring-boot
+# sturdy-tribble
 Learning Spring Boot
