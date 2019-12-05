@@ -4,7 +4,7 @@ public class Employee {
     private Integer id;
     private String lastName;
     private Integer gender;
-    private String Email;
+    private String email;
     private Integer dId;
 
     @Override
@@ -13,7 +13,7 @@ public class Employee {
                 "id=" + id +
                 ", lastName='" + lastName + '\'' +
                 ", gender=" + gender +
-                ", Email='" + Email + '\'' +
+                ", email='" + email + '\'' +
                 ", dId=" + dId +
                 '}';
     }
@@ -43,11 +43,11 @@ public class Employee {
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public Integer getdId() {
