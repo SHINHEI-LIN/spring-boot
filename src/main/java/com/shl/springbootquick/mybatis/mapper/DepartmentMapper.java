@@ -1,4 +1,4 @@
-package com.shl.springbootquick.mapper;
+package com.shl.springbootquick.mybatis.mapper;
 
 import com.shl.springbootquick.bean.Department;
 import org.apache.ibatis.annotations.*;

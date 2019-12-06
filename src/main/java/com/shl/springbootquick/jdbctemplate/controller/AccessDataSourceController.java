@@ -1,4 +1,4 @@
-package com.shl.springbootquick.controller;
+package com.shl.springbootquick.jdbctemplate.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -15,13 +15,11 @@ public class AccessDataSourceController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @RequestMapping("/query")
+    @RequestMapping("/jt/query")
     @ResponseBody
     public Map<String , Object> getData() {
         List<Map<String , Object>> ret = jdbcTemplate.queryForList("SELECT * FROM department");
 
         return ret.get(0);
     }
-
-
 }

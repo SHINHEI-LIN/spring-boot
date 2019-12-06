@@ -1,5 +1,8 @@
 package com.shl.springbootquick.bean;
 
+/**
+ * 对应数据库中的Department表
+ */
 public class Department {
     private Integer id;
     private String departmentName;

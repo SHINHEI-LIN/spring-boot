@@ -1,6 +1,5 @@
 package com.shl.springbootquick.bean;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
@@ -9,13 +8,17 @@ import javax.validation.constraints.Email;
 import java.util.List;
 import java.util.Map;
 
-// 将类中的属性与配置文件中的值绑定，prefix指定该类对应配置文件中的属性
 @Component
 @ConfigurationProperties(prefix = "person")
-// 校验
+/**
+ * @Validated 开启数据校验功能，在配置该属性的时候，需要满足相应的条件；
+ */
 @Validated
 public class Person {
-    // 从配置文件中注入单个属性
+    /**
+     * @Value 从配置文件中注入单个属性，如果需要一次性从配置文件中注入多个属性，
+     * 可以选择@ConfigurationProperties
+     */
     //@Value("${name}")
     private String name;
     private Integer age;
@@ -23,7 +26,6 @@ public class Person {
     // 注入时校验当前字段是否为邮箱
     @Email
     private String Email;
-
     private List<Object> list;
     private Map<String, Object> map;
     private Dog dog;

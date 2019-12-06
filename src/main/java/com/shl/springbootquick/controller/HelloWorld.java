@@ -10,6 +10,6 @@ public class HelloWorld {
     @RequestMapping("/hello")
     @ResponseBody
     public String printHelloWorld() {
-        return "Hello World Quick!";
+        return "<h2>Hello World Quick!</h2>";
     }
 }

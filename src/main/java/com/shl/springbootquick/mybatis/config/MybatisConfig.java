@@ -1,4 +1,4 @@
-package com.shl.springbootquick.config;
+package com.shl.springbootquick.mybatis.config;
 
 import org.apache.ibatis.session.Configuration;
 import org.mybatis.spring.boot.autoconfigure.ConfigurationCustomizer;

@@ -1,4 +1,4 @@
-package com.shl.springbootquick.service;
+package com.shl.springbootquick.log;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

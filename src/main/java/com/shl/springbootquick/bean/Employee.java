@@ -1,5 +1,8 @@
 package com.shl.springbootquick.bean;
 
+/**
+ * 对应数据库中的Employee表
+ */
 public class Employee {
     private Integer id;
     private String lastName;
