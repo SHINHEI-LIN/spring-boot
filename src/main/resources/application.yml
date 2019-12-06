@@ -47,6 +47,14 @@ spring:
 #控制台显示sql
     show-sql: true
 
+##########国际化设置##########
+  messages:
+    basename: i18n.login
+
+#########禁用缓存##########
+  thymeleaf:
+    cache: false
+
 
 ##########是否启动Debug模式##########
 # 启动debug模式可以打印出自动匹配报告，列出已启用的自动配置

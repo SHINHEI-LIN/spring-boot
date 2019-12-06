@@ -38,11 +38,19 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!--引入Webjar： 以jar包的方式引入静态资源-->
+		<!--Webjars： 以jar包的方式引入静态资源-->
+		<!--以webjar的方式引入jquery-->
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>jquery</artifactId>
 			<version>3.2.0</version>
+		</dependency>
+
+		<!--以webjars的方式引入bootstrap-->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>4.4.1</version>
 		</dependency>
 
 		<!--引入前端的模板引擎：Thymeleaf-->
