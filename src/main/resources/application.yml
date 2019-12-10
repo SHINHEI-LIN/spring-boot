@@ -51,10 +51,23 @@ spring:
   messages:
     basename: i18n.login
 
-#########禁用缓存##########
+##########禁用缓存##########
   thymeleaf:
     cache: false
 
+##########日期格式化###########
+#日期的格式化；SpringMVC将页面提交的值需要转换为指定的类型;
+#2017-12-12---Date； 类型转换，格式化;
+#默认日期是按照/的方式；
+  mvc:
+    date-format: yyyy-MM-dd
+##########配置HiddenmethodFilterMethod过滤器#########
+#浏览器form表单只支持GET与POST请求，而DELETE、PUT等method并不支持，
+#spring3.0添加了一个过滤器，可以将这些请求转换为标准的http方法，
+#使得支持GET、POST、PUT与DELETE请求，该过滤器为HiddenHttpMethodFilter。
+    hiddenmethod:
+      filter:
+        enabled: true
 
 ##########是否启动Debug模式##########
 # 启动debug模式可以打印出自动匹配报告，列出已启用的自动配置
@@ -68,7 +81,6 @@ logging:
     path: D:\
 #设置日志级别
   level.com.shl: debug
-
 
 ##########Mybatis相关配置##########
 #配置mybatis配置文件路径和mapper路径

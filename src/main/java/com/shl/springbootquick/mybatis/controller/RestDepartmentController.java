@@ -49,7 +49,7 @@ public class RestDepartmentController {
         return ret;
     }
 
-    @GetMapping("/emp/{id}")
+    @GetMapping("rest/emp/{id}")
     public Employee getEmp(@PathVariable("id") Integer id) {
         Employee employee = employeeMapper.getEmp(id);
 
